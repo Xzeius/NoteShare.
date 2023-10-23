@@ -1,0 +1,171 @@
+
+body {
+    font-size: 18px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/light_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.sun-image {
+    position: fixed;
+    bottom: 30px; 
+    right: 20px; 
+    width: 35px; 
+    height: auto; 
+    z-index: 9999;
+}
+
+
+body {
+    font-size: 18px; 
+}
+
+h1 {
+    font-size: 36px; 
+}
+
+button {
+    font-size: 24px; 
+}
+
+.app-bar {
+    background-color: transparent; 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 220px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-shadow: 2px 4px 4px black;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #C19A6B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.home-content h1 {
+  color: #D3D3D3;
+  line-height: 0.5;
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 2px 4px 4px black;
+  text-align: center; 
+}
+
+.home-content h3 {
+  font-size: 28px;
+  line-height: 2;
+  font-weight: 500;
+  color: #EADDCA;
+  text-shadow: 2px 4px 4px black;
+  text-align: center; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; 
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 40px 10px; /* Increased margin-top value */
+    border-radius: 65px;
+    font-weight: bold;
+    border: 2px solid #E5AA70;
+    background: transparent;
+    color: #F5DEB3;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+    
+
+
+span {
+    background: #C4A484;
+    height: 100%;
+    width: 0;
+    border-radius: 65px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.fade-down {
+    animation: fadedown 0.3s linear forwards;
+}
+
+.fade-up {
+    animation: fadedown 0.3s linear forwards;
+}
+
+@keyframes fadedown {
+    0% {
+        transform: translateY(-30px) scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        transform: translate(30px) scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}

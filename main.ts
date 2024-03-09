@@ -1,4 +1,4 @@
-import "./css/style.css"
+
 import createKindeClient from "@kinde-oss/kinde-auth-pkce-js";
 (async () => {
 const kinde = await createKindeClient({
